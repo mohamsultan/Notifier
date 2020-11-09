@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - ignore:
-      - scripts
-      - appspecs.yml
   - source: /
+    ignore:
+      - scripts
+      - appspeczzz
     destination: /var/www/html/
 hooks:
  BeforeInstall:
