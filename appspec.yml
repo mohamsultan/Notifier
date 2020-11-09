@@ -11,7 +11,3 @@ hooks:
   - location: scripts/httpd_start.sh
     timeout: 300
     runas: root
- ApplicationStop:
-  - location: scripts/httpd_stop.sh
-    timeout: 300
-    runas: root
