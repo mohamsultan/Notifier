@@ -1,0 +1,19 @@
+body {
+  background-image: url("./images/bg.jfif");
+}
+.font {
+  font-family: "Syne Mono", monospace;
+}
+.custom-font {
+  font-family: "B612", sans-serif;
+  font-family: "Itim", cursive;
+  color: rgb(255, 255, 255);
+}
+.custom-font-info {
+  font-family: "Syne Mono", monospace;
+  color: black;
+  font-size: larger;
+}
+.custom-padding {
+  padding-top: 50px;
+}

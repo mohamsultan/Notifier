@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Myapp</title>
+        <link rel="stylesheet" href="./index.css">
+        <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@1,700&family=Itim&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col">
+                    <nav class="navbar">
+                        <a class="navbar-brand" href="#">
+                        <img src="./images/notification.png" width="75" height="75" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="custom-font">Notifier</h1>
+                </div>
+                <div class="col">
+                    <p class="custom-font-info">Subscribe all to receive Notifications of all packages!!</p>
+                </div>
+                <div class="col">
+                  <a href="#" class="btn btn-danger"  data-toggle="modal" data-target="#subscribeall">Subscribe All</a>
+                </div>
+            </div>
+        </div>          
+        
+        <div class="container custom-padding justify-content-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/story.jpg" class="card-img-top" width="200" height="200" alt="story">
+                        <div class="card-body">
+                          <h5 class="card-title">Bed Time Story</h5>
+                          <p class="card-text font"> Read the biggest collection of free bedtime stories, fairy tales, nursery rhymes, poems for kids and short stories for kids!</p>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#story">Subscribe</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/quote.jpg" class="card-img-top" width="200" height="200" alt="quote">
+                        <div class="card-body">
+                          <h5 class="card-title">Feel the Quote</h5>
+                          <p class="card-text font">Discover the famous life sayings and quotes about life will inspire positivity and good, happy feelings!</p>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#quote">Subscribe</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/fact.jpg" class="card-img-top" width="200" height="200" alt="facts">
+                        <div class="card-body">
+                          <h5 class="card-title">Interesting Facts</h5>
+                          <p class="card-text font">Here we have one thousand random and interesting facts about literally everything you could think of!</p>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#facts">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Subscribe All -->
+        <div class="modal fade" id="subscribeall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe All</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="package1">Package</label>
+                    <input type="text" class="form-control" value="Bed time story, Feel the quote, Interesting facts"  id="package1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control"  id="username1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" id="getdata" class="btn btn-primary" onclick="myFunction1()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bed Time Story -->
+        <div class="modal fade" id="story" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe Bed time story</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="package2">Package</label>
+                    <input type="text" class="form-control" value="Bed time story"  id="package2" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control"  id="username2" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" id="getdata" class="btn btn-primary" onclick="myFunction2()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feel the quote -->
+
+        <div class="modal fade" id="quote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe Feel the quote</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="package3">Package</label>
+                    <input type="text" class="form-control" value="Feel the quote"  id="package3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control"  id="username3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" id="getdata" class="btn btn-primary" onclick="myFunction3()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interesting facts -->
+        <div class="modal fade" id="facts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Subscribe Interesting facts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="package4">Package</label>
+                    <input type="text" class="form-control" value="Interesting facts"  id="package4" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control"  id="username4" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" id="getdata" class="btn btn-primary" onclick="myFunction4()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+
+</html>
