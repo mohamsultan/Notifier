@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - ignore:
-      - scripts 
-      - appspec.yml
-  - source: /script.js
+      - scripts
+      - appspecs.yml
+  - source: /
     destination: /var/www/html/
 hooks:
  BeforeInstall:
