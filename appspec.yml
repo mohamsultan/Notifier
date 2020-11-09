@@ -2,9 +2,6 @@ version: 0.0
 os: linux
 files:
   - source: /
-    ignore:
-      - scripts
-      - appspeczzz
     destination: /var/www/html/
 hooks:
  BeforeInstall:
