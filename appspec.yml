@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-  - ignore:
+    destination: /var/www/html/
+    ignore:
       - 'scripts'
       - 'appspec.yml'
-    destination: /var/www/html/
 hooks:
  BeforeInstall:
   - location: scripts/httpd_install.sh
