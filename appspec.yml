@@ -3,9 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
-    ignore:
-      - 'scripts'
-      - 'appspec.yml'
 hooks:
  BeforeInstall:
   - location: scripts/httpd_install.sh
